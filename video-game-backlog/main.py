@@ -16,7 +16,7 @@ def main():
     # Retrieve the API key from environment variables
     api_key = os.getenv("API_KEY")
     if not api_key:
-        print("API key not found. Please set it in your .env file.")
+        print("API key not found. Please s1et it in your .env file.")
         sys.exit(1)
         
     backlog_manager = BacklogManager(data_dir="./data")
