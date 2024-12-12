@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-# cli_handler.py
+# This class handles all CLI interactions with the user.
+# It uses BacklogManager and GameSearcher to perform actions.
+# It also guides the user through menus and sub-menus.
+# It is the "controller" between the user and the data logic.
+
 from .utilities import clear_screen, print_backlog_list, print_game_list
 from .game_searcher import GameSearcher
 

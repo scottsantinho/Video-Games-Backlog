@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # This class will handle searching for games using the RAWG.io API.
 # API docs: https://rawg.io/
-# We use the provided API key and the search endpoint.
 
 import requests
 
