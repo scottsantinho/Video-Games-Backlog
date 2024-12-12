@@ -1,14 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# main.py
 import sys
 from classes.cli_handler import CLIHandler
 from classes.backlog_manager import BacklogManager
 from classes.utilities import clear_screen
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env
+load_dotenv()
 
 def main():
+    # Retrieve the API key from environment variables
+    api_key = os.getenv("API_KEY")
+    if not api_key:
+        print("API key not found. Please set it in your .env file.")
+        sys.exit(1)
+        
     backlog_manager = BacklogManager(data_dir="./data")
-    cli_handler = CLIHandler(backlog_manager=backlog_manager)
+    cli_handler = CLIHandler(backlog_manager=backlog_manager, api_key=api_key)
 
     while True:
         clear_screen()
