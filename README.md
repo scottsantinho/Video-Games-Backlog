@@ -1,5 +1,7 @@
 # Video Game Backlog Manager
 
+![Preview](assets/preview.png)
+
 ## Table of Contents
 - [Description](#description)
 - [Getting Started](#getting-started)
